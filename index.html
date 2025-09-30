@@ -1,0 +1,217 @@
+ <!DOCTYPE html> 
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>4 задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" rel="preload">
+  </head>
+  <body style="font-family: 'Montserrat';background-color: #f4fff4;">
+      <nav class="navbar navbar-expand-lg fixed-top rounded-bottom-3 shadow" style="background-color: rgba(155, 204, 154, 0.85); border-bottom: 1px solid rgba(0,0,0,0.1);font-family: 'Montserrat';backdrop-filter: blur(6px);-webkit-backdrop-filter: blur(6px);">
+          <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center">
+            <img class="rounded me-3" id="logo" src="logo.png" alt="logo" style="height: 3rem; border: 0.4vh solid black;">
+            <div class="text-white fw-bold" style="font-size:1.5rem" id="header-text">Задание 4</div>
+          </a>
+          <button class="navbar-toggler shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="justify-content-end collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav gap-2">
+              <li><a class="nav-link fw-bold text-white text-center" href="https://kubsu.ru/" target="_blank">Сайт КубГУ</a></li>
+              <li><a class="nav-link fw-bold text-white text-center" href="https://github.com/xromza/" target="_blank">Github</a></li>
+              <li><a class="nav-link fw-bold text-white text-center" href="#form">Оставить заявку</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container pt-5 mt-5 min-vh-100">
+      <main class="d-flex flex-column">
+        <div class="order-2 order-md-1 mx-auto d-flex justify-content-center" id="hl-wrapper">
+          <ol>
+            <li><a id="httpkubsu" href="http://kubsu.ru/">КубГУ HTTP</a></li>
+            <li><a href="https://kubsu.ru/">КубГУ HTTPS</a></li>
+            <li><a href="https://example.com/">
+                <img src="image.jpg" width="300" alt="картинка" title="картинка с ссылкой"> 
+            </a></li>
+            <li><a href="./index.html">Ссылка на внутреннюю страницу</a></li>
+            <li><a href="/">Главная страница</a></li>
+            <li><a href="#httpkubsu">Ссылка на фрагмент КубГУ HTTPS</a></li>
+            <li><a href="https://example.com/?param1=1&param2=2&param3=3">Ссылка с тремя параметрами</a></li>
+            <li><a href="https://example.com/?id=1">Ссылка с параметром id</a></li>
+            <li><a href="./example.html">Ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="./about/example.html">Ссылка на страницу в каталоге about</a></li>
+            <li><a href="../example.html">Ссылка на страницу в каталоге на уровень выше</a></li>
+            <li><a href="../../example.html">Ссылка на страницу в каталоге на два уровня выше</a></li>
+            <li><p>lorem ipsum dolor <a href="https://example.com/">ссылка</a> sit amet</p></li>
+            <li><a href="https://kubsu.ru/index.php#region-content" target="_blank">Ссылка на контент на другой странице</a></li>
+            <li>
+              <img src="./image.jpg" usemap="#map" width="300" alt="картинка с кликабельными областями" title="картинка с кликабельными областями">
+              <map name="map">
+                <!-- Прямоугольная ссылка -->
+                <area shape="rect" 
+                      coords="10,10,110,90" 
+                      href="https://google.com" 
+                      alt="Перейти на Google">
+
+                <!-- Круглая ссылка -->
+                <area shape="circle" 
+                      coords="250,175,50" 
+                      href="https://youtube.com" 
+                      alt="Перейти на YouTube">
+              </map>
+            </li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="https://example.com" rel="nofollow">Ссылка, по которой не могут переходить поисковики</a></li>
+            <li><!--noindex--><a href="https://example.com">Ссылка, которую не могут индексировать</a><!--/noindex--></li>
+            <li>
+              <ol>
+                <li>
+                  <a style="color:#175e17;" title="ссылка1">Первая ссылка</a>
+                </li>
+                <li>
+                  <a style="color:#175e17;" title="ссылка2">Вторая ссылка</a>
+                </li>
+                <li>
+                  <a style="color:#175e17;" title="ссылка3">Третья ссылка</a>
+                </li>
+              </ol>
+            </li>
+            <li><a href="ftp://login:password@127.0.0.1:21/file.txt">Ссылка на FTP-сервер с авторизацией</a></li>
+          </ol>
+        </div>
+        <div class="order-1 order-md-2 d-flex flex-column my-3" id="table-wrapper">
+          <h2 class="text-center fw-bold">Расписание</h2>
+          <table class="justify-content-center overflow-x-scroll table table-striped table-hover table-bordered mx-auto w-90 custom-table shadow-lg">
+            <thead class="text-center">
+              <tr>
+                <th>Время</th>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>  
+                <th>Четверг</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td class="text-nowrap text-center" id="time">8:00-9:20</td>
+                <td colspan="2">Разработка пользовательского WEB-интерфейса</td>
+                <td>Математический анализ</td>
+                <td rowspan="5">КСРС</td>
+              </tr>
+              <tr>
+                <td class="text-nowrap text-center" id="time">9:30-10:50</td>
+                <td>ООП</td>
+                <td rowspan="2">Компьютерные сети</td>
+                <td>Физическая культура</td>
+              </tr>
+              <tr>
+                <td class="text-nowrap text-center" id="time">11:10-12:30</td>
+                <td>Экономика</td>
+                <td>Иностранный язык</td>
+              </tr>
+              <tr>
+                <td class="text-nowrap text-center" id="time">12:40-14:00</td>
+                <td>Дифференциальные уравнения</td>
+                <td id="border-bottom" colspan="2" rowspan="2">Математический анализ лекция</td>
+              </tr>
+              <tr>
+                <td class="text-nowrap text-center" id="time">14:10-15:30</td>
+                <td colspan="1">Дополнительное занятие по математическому анализу</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <div class="order-3 order-md-3 mx-auto" id="form-wrapper" style="width: 80%;">
+            <hr class="mx-auto w-100">
+            <h2 class="my-4 text-center fw-bold">Оставить заявку</h2>
+            <form action="/" method="POST" id="form" class="d-flex mx-auto row g-3" style="max-width: 100%;">
+              <!--Поле ввода Имени-->
+              <div class="col-md-4">
+                <label class="form-label" for="surname">Фамилия*</label>
+                <input class="form-control" required type="text" id="surname" name="surname" placeholder="Иванов">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="name">Имя*</label>
+                <input class="form-control" required type="text" id="name" name="name" placeholder="Иван">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="midname">Отчество</label>
+                <input class="form-control" type="text" id="midname" name="midname" placeholder="Иванович">
+              </div>
+              <!--Поле ввода номера телефона-->
+              <div class="col-12">
+                <label class="form-label" for="phone">Телефон:</label>
+                <input class="form-control" required type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+              </div>
+              <div class="col-12">
+              <!--Поле ввода email-->
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-control" required type="email" id="email" name="email" placeholder="address@example.com">
+              </div>
+              <div class="col-12">
+              <!--Поле ввода даты рождения-->
+                <label class="form-label" for="birthdate">Дата рождения:</label>
+                <input class="form-control" required type="date" id="birthdate" name="birthdate">
+              </div>
+
+              <!--Выбор пола-->
+              <div class="col-12">
+                <div>Пол:</div>
+                <div class="d-flex flex-row gap-3">
+                  <div class="form-check">
+                    <input class="form-check-input" required type="radio" name="gender" value="female">
+                    <label class="form-check-label" for="gender1">Женский</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input class="form-check-input" required type="radio" name="gender" value="male">
+                    <label class="form-check-label" for="gender2">Мужской</label>
+                  </div>
+                </div>
+              </div>
+              <!--Выбор любимого языка программирования-->
+              <div class="col-12">
+                <label for="favlang">Любимые языки программирования:</label>
+                <select class="form-select" id="favlang" name="favlang[]" multiple size="6">
+                  <option value="pascal">Pascal</option>
+                  <option value="c">C</option>
+                  <option value="cpp">C++</option>
+                  <option value="js">JavaScript</option>
+                  <option value="php">PHP</option>
+                  <option value="python">Python</option>
+                  <option value="haskel">Haskel</option>
+                  <option value="clojure">Clojure</option>
+                  <option value="prolog">Prolog</option>
+                  <option value="scala">Scala</option>
+                  <option value="assembly">Assembly</option>
+                </select><br>
+              </div>
+              <!--Многострочное поле ввода-->
+              <div class="col-12">
+                <label class="form-label" for="bio">Биография:</label>
+                <textarea class="form-control" name="bio" id="bio" rows="10" placeholder="Ваша биография"></textarea>
+              </div>
+              <!--Кнопка "с контрактом ознакомлен"-->
+              <label class="form-check-label" style="margin-top: 1em; margin-bottom: 1em;">С контрактом ознакомлен(-а) <input class="form-check-input" required type="checkbox" id="contractacceptance" name="contractacceptance"></label>
+              <!--Кнопка отправки-->
+              <button class="btn btn-primary mx-auto mb-3" type="submit">Сохранить</button>
+            </form>
+          </div>
+      </main>
+    </div>
+    <footer class="text-white py-3 rounded-top-3 shadow-sm" style="background-color: #208520;">
+      <div class="d-flex align-items-center fs-3 flex-column container">
+        <div class="fs-3">made by xromza</div>
+        <div class="fs-5">2025</div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+       

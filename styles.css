@@ -1,0 +1,75 @@
+.navbar-nav a {
+    display: block;
+    transition: 0.2s;
+}
+
+.navbar-nav a:hover {
+    transform: scale(1.2);
+}
+
+.custom-table td {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+#hl-wrapper li a {
+    color: #56af56;
+    transition: 0.2s;
+}
+
+#hl-wrapper li a:visited {
+    color: #208520;
+}
+
+#hl-wrapper li {
+    transition: 0.2s;
+}
+
+#hl-wrapper li:hover {
+    color: #208520;
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: #439643 !important;
+    border-color: #439643 !important;
+}
+
+.btn-primary:hover {
+    background-color: #208520 !important;
+    border-color: #208520 !important;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(86, 175, 86, 0.25) !important;
+}
+
+.form-control:focus {
+    border-color: #56af56 !important;
+    box-shadow: 0 0 0 0.25rem rgba(86, 175, 86, 0.25) !important;
+}
+
+.form-check-input:checked {
+    background-color: #56af56 !important;
+    border-color: #56af56 !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(86, 175, 86, 0.25) !important;
+}
+
+.form-select:focus {
+    border-color: #56af56 !important;
+    box-shadow: 0 0 0 0.25rem rgba(86, 175, 86, 0.25) !important;
+}
+
+.custom-table {
+    --bs-table-head-bg: #208520 !important;
+    --bs-table-head-color: white !important;
+    --bs-table-bg: #aae2a9 !important;
+    --bs-table-striped-bg: #d3fad2 !important;
+    --bs-table-hover-bg: #a5d8a5 !important;
+    --bs-table-color: #000 !important;
+    --bs-table-border-color: #000 !important;
+
+}
